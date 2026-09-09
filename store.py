@@ -1,6 +1,5 @@
 """Mini Store starter code for the Git/GitHub workflow exercise."""
 
-#hola
 
 def shipping_cost(subtotal):
     if subtotal < 0:
@@ -9,8 +8,10 @@ def shipping_cost(subtotal):
 
 
 def apply_discount(subtotal, percent):
-    if subtotal < 0:
-        raise ValueError("subtotal must be >= 0")
+    if percent < 0:
+        raise ValueError("percent must be >= 0")
+    if percent > 100:
+        raise ValueError("percent must be <= 100")
     return round(subtotal * (1 - percent / 100), 2)
 
 
