@@ -21,3 +21,8 @@ def loyalty_discount(points):
     if points < 0:
         raise ValueError("points must be >= 0")
     return 0
+
+def funcion_prueba(points):
+    if points < 10:
+        raise ValueError("points must be >= 10")
+    return 0
