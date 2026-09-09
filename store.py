@@ -1,9 +1,12 @@
 """Mini Store starter code for the Git/GitHub workflow exercise."""
 
-
 def shipping_cost(subtotal):
     if subtotal < 0:
         raise ValueError("subtotal must be >= 0")
+
+    if subtotal >= 1000:
+        return 0.0
+
     return 99.0
 
 
@@ -20,9 +23,4 @@ def can_checkout(item_count):
 def loyalty_discount(points):
     if points < 0:
         raise ValueError("points must be >= 0")
-    return 0
-
-def funcion_prueba(points):
-    if points < 10:
-        raise ValueError("points must be >= 10")
     return 0
