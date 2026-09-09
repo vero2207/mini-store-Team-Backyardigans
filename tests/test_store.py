@@ -18,7 +18,7 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(can_checkout(1))
 
     def test_checkout_with_zero_items(self): #C
-        self.assertFalse(can_checkout(0))
+    self.assertFalse(can_checkout(0))
 
     def test_checkout_with_fifty_items(self): #C
         self.assertTrue(can_checkout(50))
