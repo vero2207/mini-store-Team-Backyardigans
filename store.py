@@ -1,5 +1,6 @@
 """Mini Store starter code for the Git/GitHub workflow exercise."""
 
+#hola
 
 def shipping_cost(subtotal):
     if subtotal < 0:
@@ -21,3 +22,4 @@ def loyalty_discount(points):
     if points < 0:
         raise ValueError("points must be >= 0")
     return 0
+
