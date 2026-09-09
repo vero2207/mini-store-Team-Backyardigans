@@ -14,6 +14,8 @@ def apply_discount(subtotal, percent):
         raise ValueError("percent must be <= 100")
     return round(subtotal * (1 - percent / 100), 2)
 
+        #Me gusto, siento que aporta bastante a los requerimientos de la practica. Atte. Vero :)
+
 
 def can_checkout(item_count):
     return 1 <= item_count <= 50
