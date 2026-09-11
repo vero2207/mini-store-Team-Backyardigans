@@ -9,6 +9,9 @@ def shipping_cost(subtotal):
 
     return 99.0
 
+#Buena función, solo agregaria una prueba para comprobar que exactamente 1000 recibe envio gratis tambien.
+
+
 
 def apply_discount(subtotal, percent):
     if subtotal < 0:
