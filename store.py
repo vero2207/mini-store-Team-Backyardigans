@@ -1,6 +1,5 @@
 """Mini Store starter code for the Git/GitHub workflow exercise."""
 
-#hola
 
 def shipping_cost(subtotal):
     if subtotal < 0:
@@ -9,9 +8,14 @@ def shipping_cost(subtotal):
 
 
 def apply_discount(subtotal, percent):
-    if subtotal < 0:
-        raise ValueError("subtotal must be >= 0")
+    if percent < 0:
+        raise ValueError("Percent must be more than 0")
+    if percent >= 100:
+        raise ValueError("Percent must be less than 100")
     return round(subtotal * (1 - percent / 100), 2)
+
+        #Me gusto, siento que aporta bastante a los requerimientos de la practica. Solo que yo cambiaria el texto a algo mas claro y con mayusculas al principio. Como "Percent must be...". Atte. Vero :)
+
 
 
 def can_checkout(item_count):
