@@ -9,7 +9,7 @@ def shipping_cost(subtotal):
 
     return 99.0
 
-#Buena función, solo agregaria una prueba para comprobar que exactamente 1000 recibe envio gratis tambien.
+#Esta perfecta tu funcion, Solo cambiaria el mensaje de error para que sea mas claro, por ejemplo "Subtotal cannot be negative" atte. Nathalie 
 
 
 
