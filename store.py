@@ -14,7 +14,7 @@ def apply_discount(subtotal, percent):
         raise ValueError("percent must be <= 100")
     return round(subtotal * (1 - percent / 100), 2)
 
-        #Me gusto, siento que aporta bastante a los requerimientos de la practica. Solo que yo cambiaria el texto a algo mas claro y con mayusculas al principio. Como "percent must be...". Atte. Vero :)
+        #Me gusto, siento que aporta bastante a los requerimientos de la practica. Solo que yo cambiaria el texto a algo mas claro y con mayusculas al principio. Como "Percent must be...". Atte. Vero :)
 
 
 def can_checkout(item_count):
