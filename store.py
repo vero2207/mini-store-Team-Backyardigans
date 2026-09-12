@@ -9,12 +9,13 @@ def shipping_cost(subtotal):
 
 def apply_discount(subtotal, percent):
     if percent < 0:
-        raise ValueError("percent must be >= 0")
-    if percent > 100:
-        raise ValueError("percent must be <= 100")
+        raise ValueError("Percent must be more than 0")
+    if percent >= 100:
+        raise ValueError("Percent must be less than 100")
     return round(subtotal * (1 - percent / 100), 2)
 
         #Me gusto, siento que aporta bastante a los requerimientos de la practica. Solo que yo cambiaria el texto a algo mas claro y con mayusculas al principio. Como "Percent must be...". Atte. Vero :)
+
 
 
 def can_checkout(item_count):
